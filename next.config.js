@@ -1,4 +1,4 @@
-
+//@
 const path = require('path')
 
 /** @type {import('next').NextConfig} */
@@ -31,5 +31,4 @@ module.exports = withTM({
     }
     return config
   },
-  ignoreBuildErrors: true
 })

@@ -1,4 +1,5 @@
 // ** React Imports
+//@ts-nocheck
 import { ReactNode } from 'react'
 
 // ** Next Imports

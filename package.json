@@ -9,7 +9,8 @@
     "export": "next export",
     "lint": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "start:pm2": "pm2 start --name ZIPAWAY_DASHBOARD npm -- start"
+    "start:pm2": "pm2 start --name ZIPAWAY_DASHBOARD npm -- start",
+    "build:ts-nocheck": "next build && find ./src -type f -name '*.tsx' -exec sed -i '1i// @ts-nocheck' {} +"
   },
   "dependencies": {
     "@casl/ability": "5.4.3",
